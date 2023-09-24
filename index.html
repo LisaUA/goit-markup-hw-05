@@ -397,24 +397,28 @@
             </ul>
         </div>
         <div class="footer-subscribe">
-                <p class="subscribe-footer-p">Subscribe</p>
-                <form class="footer-form">
-                    <label class="footer-label">
-                        <input class="footer-input" type="email" name="e-mail" placeholder="E-mail"/>
-                    </label>
-                    <button class="button-pr-sub" type="submit">
+            <p class="subscribe-footer-p">Subscribe</p>
+            <form class="footer-form">
+                <label class="footer-label" for="e-mail">
+                    <input class="footer-input" 
+                    type="email" 
+                    id="e-mail" 
+                    name="e-mail" 
+                    placeholder="E-mail"/>
+                </label>
+                <button class="button-pr-sub" type="submit">
                 Subscribe
-                        <svg class="footer-icon-sub" width="24" height="24">
-                            <use href="./images/icons.svg#icon-icon-send"></use>
-                        </svg>
-                    </button>
-                </form>
+                    <svg class="footer-icon-sub" width="24" height="24">
+                        <use href="./images/icons.svg#icon-icon-send"></use>
+                    </svg>
+                </button>
+            </form>
         </div>
     </div>
   </footer>
 
 
-    <div class="modal"><!--is hidden-->
+    <div class="modal backdrop" data-modal>
         <div class="modal-window">
             <button class="modal-button-close" type="button">
                 <svg class="modal-close-icon" width="8" height="8">
@@ -460,16 +464,20 @@
                 </label>
             </div>
             <div class="checkbox-field">
-                <input class="checkbox-field-input" type="checkbox" name="user-privacy" id="user-privacy"
-                    value="true" />
+                <input 
+                class="checkbox-field-input visually-hidden" 
+                type="checkbox" 
+                name="user-privacy" 
+                id="user-privacy"
+                value="true" />
                 <label class="user-privacy-label" for="user-privacy">
-                    I accept the terms and conditions of the
                     <span class="span-user-privacy">
                         <svg class="user-privacy-icon" width="10" height="8">
                             <use href="./images/icons.svg#icon-vector"></use>
                         </svg>
                     </span>
-                    <a class="privacy-policy" href="">Privacy Policy</a>
+                    I accept the terms and conditions of the
+                    <a class="privacy-policy" href="#">Privacy Policy</a>
                 </label>
             </div>
             <button class="modal-button" type="submit">Send</button>
