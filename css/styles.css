@@ -601,6 +601,7 @@ body {
 
 .footer-form-icon{
     fill: var(--c-primary-light);
+    margin-left: 16px;
 }
 
 .backdrop{
@@ -620,7 +621,7 @@ body {
 .is-open{
     opacity: 1;
     visibility: visible;
-    pointer-events: none;
+    pointer-events: auto;
 }
 
 .modal-window{
@@ -637,7 +638,7 @@ body {
     padding: 72px 24px 24px 24px;
 }
 
-.modal-window-button{
+.modal-window-close{
     position: absolute;
     top: 24px;
     right: 24px;
@@ -654,7 +655,8 @@ body {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-window-button:hover, .modal-window-button:focus{
+.modal-window-close:hover,
+.modal-window-close:focus {
     background-color: var(--c-cont-but);
     border: none;
 }
@@ -662,7 +664,8 @@ body {
 .close-icon{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-window .close-icon:hover, .modal-window .close-icon:focus{
+.modal-window-close:hover .close-icon,
+.modal-window-close:focus .close-icon{
     fill: var(--c-primary-light);
 }
 
@@ -716,7 +719,7 @@ body {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-icon .modal-form-input:focus{
+.modal-form-input:focus + .modal-form-icon {
     fill: var(--c-logo);
 }
 
@@ -731,7 +734,7 @@ body {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--c-form-cont);
-    border: 1px solid var(--c-form-cont);
+    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     background-color: transparent;
     padding: 8px 16px;
@@ -764,7 +767,7 @@ body {
     fill: transparent;
 }
 
-.checkbox-input:checked .user-privacy-span{
+.checkbox-input:checked + .user-privacy-label .user-privacy-span{
     background-color: var(--c-cont-but);
     border: none;
     fill: var(--c-second);
@@ -772,7 +775,6 @@ body {
 
 .privacy{
     color: var(--c-logo);
-    text-decoration: dashed;
 }
 
 .send-button {
