@@ -400,7 +400,7 @@ body {
     row-gap: 48px;
 }
 
-..section-portfolio-li:hover{
+.section-portfolio-li:hover{
     transform: translateY(0%);
 }
 
@@ -475,6 +475,7 @@ body {
 .footer-container{
     display: flex;
     align-items: baseline;
+}
 
 .logo-container{
     margin-right: 120px;
