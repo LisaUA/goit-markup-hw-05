@@ -734,7 +734,7 @@ body {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--c-form-cont);
-    border: 1px solid rgba(46, 47, 66, 0.4);
+    border: 1px solid var(--c-form-cont);
     border-radius: 4px;
     background-color: transparent;
     padding: 8px 16px;
